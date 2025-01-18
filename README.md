@@ -5,7 +5,11 @@ For robust and maintainable usage of jenkins in AllcareSquad Team's CI/CD.
 ### Run
 
 ```
-docker compose -f "docker-compose.yaml" up -d --build
+chown -R 1000:1000 jenkins-data/
+```
+
+```
+docker-compose -f "docker-compose.yaml" up -d --build
 ```
 
 ### Data directory
